@@ -1,0 +1,17 @@
+<p>photos works!</p>
+<!-- <button class="btn btn-success pull-right" (click)="refreshRequest()">Refresh Page</button> -->
+<table>
+    <thead>
+        <tr>
+            <th *ngFor="let header of listItemHeaders">{{header}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="album-{{item.id}}" *ngFor="let item of listItems">
+            <td *ngFor="let header of listItemHeaders">{{item[header]}}</td>
+            <!-- <td>{{ item.userId }}</td>
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td> -->
+        </tr>
+    </tbody>
+</table>
